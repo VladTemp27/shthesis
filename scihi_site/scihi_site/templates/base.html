@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="" rel="img" type = "image/jpeg">
+    <title>{% block title %} SCIHI {% endblock %}</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    {% block customcss %} {% endblock %}
+
+</head>
+<body class="{% block bodyclass%} {% endblock %}" style="{% block bodystyle %} {% endblock %}">
+    <main class="{% block mainclass%} {% endblock %}" style="{% block mainstyle %} {% endblock %}">
+        {% block navbar %} {% endblock%}
+        {% block content %} {% endblock %}
+        {% block footer %} {% endblock %}
+    </main>
+<script src="{% static 'js/bootstrap.min.js' %}"></script> 
+</body>
+</html>
