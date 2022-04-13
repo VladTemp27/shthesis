@@ -1,9 +1,17 @@
 {% load static %}
-{%block customcss %} <link href="{% static 'customcss/footer.css' %}" rel="stylesheet"> {% endblock %}
-<div class="container-fluid basefooter">
-  <img src="{% static 'assets/footer-logo.png' %}" alt="" style="padding-top: 1%;">
-<p class="text-white lead" style="padding-left: 74px;">
+<div class="container-fluid basefooter" style="overflow:auto; background-image:url({% static 'assets/footer-background.png' %});
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}">
+  <img src="{% static 'assets/footer-logo.png' %}" alt="" style="padding-top: 1%; padding-left: 53px;">
+<p class="text-white lead" style="padding-left: 74px; font-size: medium; font-weight: 300;">
   Mabini Street Extension, Cabanatuan City, 3100 Nueva Ecija <br>
   Tel No: (044) 600 5872
 </p>
+<p class="text-white lead" style="padding-left:74px; font-size: small; font-weight: 100; opacity: 0.7;">Copyright © 2022. All Rights Reserved</p>
+<p class="text-white lead" style="padding-left:74px; font-size: small; font-weight: 100;"><a style="color:rgba(253, 213, 54, 1);">Terms and Conditions</a> | <a style="color:rgba(253, 213, 54, 1);"> Privacy Policy </a></p>
+<div>
+  
+</div>
 </div>
