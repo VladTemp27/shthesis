@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %} SCI-HI {% endblock %}
+
+{% block customcss %} <link rel="stylesheet" href="{% static 'customcss/custom.css' %}"> {% endblock %}
 
 {% block navbar %} {% include 'navbar.html' %} {% endblock %}
 
 {% block content %}  
-{% load static %}
 
-<div class="px-4 py-5 my-5 text-center">  
-  <img class="d-block mx-auto mb-4" src="{% static 'assets/bootstrap-logo.svg' %}" alt="" width="72" height="57">
-  <h1 class="display-5 fw-bold">Centered hero</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae, ducimus voluptatibus modi nemo eius minus totam voluptatum ex, molestiae incidunt maxime. Ipsa, sapiente! Aperiam minima ratione inventore molestiae! Eum?</p>
+
+<div class="text-center" style="height: 465px; padding: 100px; background-image: url({% static 'assets/ch-1.png' %})">
+    <h1 class="display-5 fw-bold text-white">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae, ducimus voluptatibus modi nemo eius minus totam voluptatum ex, molestiae incidunt maxime. Ipsa, sapiente! Aperiam minima ratione inventore molestiae! Eum?</p>
   </div>
 </div>
 
@@ -24,8 +25,6 @@
       <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
       <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo rem nesciunt quibusdam iure voluptatem illum aperiam molestias a sunt? Ab, reprehenderit numquam. Perferendis aperiam iste quos? Veniam facere ex labore!</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 disabled">Primary</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">Default</button>
       </div>
     </div>
   </div>

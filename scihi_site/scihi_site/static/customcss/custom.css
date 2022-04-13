@@ -1,0 +1,5 @@
+{% load static %}
+.ch1{
+    background-image: url({% static 'assets/ch-1.png' %});
+    padding: 100px;
+}

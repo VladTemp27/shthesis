@@ -1,9 +1,0 @@
-{%load static %}
-.basefooter{
-    /* width: 150px; */
-    /* height: 100px; */
-    background-image:url({% static 'assets/footer-background.png' %});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
