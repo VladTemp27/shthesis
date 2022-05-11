@@ -3,3 +3,8 @@
     background-image: url({% static 'assets/ch-1.png' %});
     padding: 100px;
 }
+
+.abtushd{
+    height: 50%;
+    width: auto;
+}
