@@ -3,6 +3,9 @@
 {% block navbar %} {% include 'navbar.html' %} {% endblock %}
 
 {% block content %}
+
+<!-- Carousel Section -->
+
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -45,7 +48,136 @@
   <div style="padding-top: 3%; text-align: center;">
       <img src="{% static 'assets/abtushd.png'%}" alt="" class="abtushd">
   </div>
+<!-- End Carousel -->
 
+
+  <!-- History Section -->
+
+  <div class="container" style="padding-top: 2%; padding-bottom: 5%;">
+      <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3"> History </h1>
+      </div>
+      <div class="row">
+        <p class="lead">
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+      <div class="row">
+        <p class="lead">
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+
+  </div>
+
+  <!-- End History Section -->
+
+  <!-- Mission Vission -->
+  <div style="background-size: 100% 100%;background-repeat: no-repeat;background-image: url({% static 'assets/reddia2.png' %});">
+    <div class="container text-white" style="padding-top: 20%; padding-bottom: 20%;">
+      <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Mission </h1>
+      </div>
+      <div class="row">
+        <p class="lead" >
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+      <div class="row" style="padding-bottom: 5%;">
+        <p class="lead">
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+      <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Vission </h1>
+      </div>
+      <div class="row">
+        <p class="lead" >
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+      <div class="row">
+        <p class="lead" >
+          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- End Mission Vission -->
+
+<!-- Hierarchy -->
+<div style="padding-bottom: 5%;">
+
+  <div class="container">
+
+    <div class="row" name="Header">
+      <h1 class="display-5 fw-bold lh-1 mb-3" style="padding-bottom: 2%;"> Hierarchy </h1>
+    </div>
+
+    <div class="row" name="Row 1">
+      <div class="col-1">
+        <img src="{% static 'assets/sqplaceholder.png' %}" alt="">
+      </div>
+
+      <div class="col">
+        <div class="row">
+          <h3 class="display-10 fw-bold lh-1 mb-3" style = "padding-left: 2%;"> Person 1 </h3>
+        </div>
+
+        <div class="row">
+          <p class="lead" style = "padding-left: 2%;" >
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row" name="Row 2">
+      
+      <div class="col-1">
+        <img src="{% static 'assets/sqplaceholder.png' %}" alt="">
+      </div>
+
+      <div class="col">
+        <div class="row">
+          <h3 class="display-10 fw-bold lh-1 mb-3" style = "padding-left: 2%;"> Person 2 </h3>
+        </div>
+
+        <div class="row">
+          <p class="lead" style = "padding-left: 2%;" >
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1">
+        <img src="{% static 'assets/sqplaceholder.png' %}" alt="">
+      </div>
+
+      <div class="col">
+        <div class="row">
+          <h3 class="display-10 fw-bold lh-1 mb-3" style = "padding-left: 2%;"> Person 3 </h3>
+        </div>
+
+        <div class="row">
+          <p class="lead" style = "padding-left: 2%;" >
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 {% endblock %}
 
 {% block footer %} {% include 'footer.html' %} {% endblock %}
