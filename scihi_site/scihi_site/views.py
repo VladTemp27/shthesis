@@ -19,3 +19,6 @@ def portal(request):
 
 def c19respo(request):
     return render(request, "c19.html")
+
+def academics(request):
+    return render(request, "academics.html")
