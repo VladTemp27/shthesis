@@ -24,5 +24,6 @@ urlpatterns = [
     path("",views.index, name="index"),
     path("about", views.about, name="about"),
     path("portal", views.portal, name="portal"),
+    path("covid19response", views.c19respo, name="covid19response")
 
 ]

@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %} SCI-HI {% endblock %}
 
-{% block customcss %} <link rel="stylesheet" href="{% static 'customcss/custom.css' %}"> {% endblock %}
+{% block customcss %}{% endblock %}
 
 {% block navbar %} {% include 'navbar.html' %} {% endblock %}
 
@@ -96,44 +96,37 @@
   </div>
 </div>
 
-<div>
-  <h1 class="display-5 fw-bold lh-1 " style="padding-bottom: 1%; padding-left: 2%;">School Clubs</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        1  
-      </div>
-
-      <div class="col">
-        2
-      </div>
-
-      <div class="col">
-        3
-      </div>
-
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">School Clubs</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <img src="{% static 'assets/testico.png' %}" alt="">
+      <h2>Featured title</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+      </a>
     </div>
-
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        1  
-      </div>
-
-      <div class="col">
-        2
-      </div>
-
-      <div class="col">
-        3
-      </div>
-
+    <div class="feature col">
+      <img src="{% static 'assets/testico.png' %}" alt="">
+      <h2>Featured title</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+      </a>
     </div>
-
+    <div class="feature col">
+      <img src="{% static 'assets/testico.png' %}" alt="">
+      <h2>Featured title</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+      </a>
+    </div>
   </div>
-
 </div>
 
 

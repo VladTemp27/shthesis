@@ -16,3 +16,6 @@ def about(request):
 
 def portal(request):
     return render(request, "portal.html")
+
+def c19respo(request):
+    return render(request, "c19.html")

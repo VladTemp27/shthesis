@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block customcss %} <link href="{% static 'css/sidebar.css'%}" rel="stylesheet"> {% endblock %} 
 
 {% block bodystyle %}background-color:#d9d9d9;{% endblock %}
 {% block content %}
-<div class="container-fluid">
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur qui temporibus, minima laudantium cum deleniti autem ipsam culpa saepe rem! Sint sapiente similique dolor quisquam a placeat distinctio impedit culpa.</p>
+{% include 'sidebar.html' %}
+
+<div class="container-fluid" style="padding-top: 1%;">
+    <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Overview </h1>
+    </div>
+
+    <div class="row">
+
+    </div>
+
 </div>
+
 {% endblock %}
