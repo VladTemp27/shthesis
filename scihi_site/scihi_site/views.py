@@ -15,7 +15,7 @@ def about(request):
     return render(request, "about.html")
 
 def portal(request):
-    return render(request, "portal.html")
+    return render(request, "login.html")
 
 def c19respo(request):
     return render(request, "c19.html")
