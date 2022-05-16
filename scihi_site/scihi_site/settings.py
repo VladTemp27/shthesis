@@ -29,8 +29,8 @@ SECRET_KEY = 'django-insecure-zee(34xwi@hz_3r4vpk4@w5rxays!3#57nat4pdn%gy5@&xc&h
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ 
 
-AUTHENTICATION_BACKENDS = ('loadmap.backends.MyBackEnd', 'django.contrib.auth.backends.ModelBackend') 
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portal',
+    's_portal',
 ]
 
 MIDDLEWARE = [
