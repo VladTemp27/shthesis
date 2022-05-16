@@ -25,3 +25,6 @@ def jhs(request):
 
 def clubs(request):
     return render(request, "clubs.html")
+
+def shs (request):
+    return render(request, "shs.html")

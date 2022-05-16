@@ -31,6 +31,8 @@ urlpatterns = [
     path("covid19response", views.c19respo, name="covid19response"),
     path("jhs",views.jhs, name="jhs"),
     path("", include('s_portal.urls')),
-    path("clubs", views.clubs, name="clubs")
+    path("clubs", views.clubs, name="clubs"),
+    path("shs", views.shs, name="shs"),
+
 
 ]
