@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.hashers import make_password, check_password
+from django.contrib.auth import login, logout, authenticate
 
 from .forms import RegisterForm
 from .models import Student
@@ -33,8 +34,6 @@ def loginPage(request):
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
-
-        user = authenticate  
 
     context = {}
     return render(request, 's_portal/login.html', context)

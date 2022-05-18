@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block customcss %} 
+
+<link href="{% static 'css/signin.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block bodyclass %} text-center {% endblock %}
+{% block mainclass %} form-signin {% endblock %}
+
+{% block content %}
+
+    <form method="POST">
+      {% csrf_token%}
+      <img class="mb-4" src="{% static 'assets/honorato.jpg' %}" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email"required autofocus>
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      {% for field in login_form %}
+      <p>
+      {% for error in field.errors %}
+      <p style="color: red">{{ error }}</p>
+      {% endfor %}
+      </p>
+      {% endfor %}
+      {% if login_form.non_field_errors %}
+      <div style="color: red">
+      <p>{{login_form.non_field_errors}}</p>
+      </div>
+
+      {% endif %}
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Lesdev 2022-2023</p>
+    </form>
+
+
+{% endblock %}

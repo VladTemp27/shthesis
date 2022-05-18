@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from s_portal import views
+from account import views
 
 
 
@@ -33,6 +34,8 @@ urlpatterns = [
     path("", include('s_portal.urls')),
     path("clubs", views.clubs, name="clubs"),
     path("shs", views.shs, name="shs"),
+    path("accountapp/", include('account.urls')),
+    path("dashboard", views.dashboard, name="dashboard")
 
 
 ]

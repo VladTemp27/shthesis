@@ -13,11 +13,13 @@
 
 </head>
 <body class="{% block bodyclass%} {% endblock %}" style="{% block bodystyle %} {% endblock %}">
-    <main class="{% block mainclass%} {% endblock %}" style="{% block mainstyle %} {% endblock %}">
         {% block navbar %} {% endblock%}
+    <main class="{% block mainclass%} {% endblock %}" style="{% block mainstyle %} {% endblock %}">
+    
         {% block content %} {% endblock %}
     </main>
     {% block footer %} {% endblock %}
+{% block customjava %} {% endblock %}
 <script src="{% static 'js/bootstrap.min.js' %}"></script> 
 </body>
 </html>

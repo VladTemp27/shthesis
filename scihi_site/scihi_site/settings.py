@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
  
+AUTH_USER_MODEL = "account.Account"
 
 
 
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     's_portal',
+    'account',
 ]
 
 MIDDLEWARE = [
