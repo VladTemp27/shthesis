@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
@@ -43,3 +43,7 @@ def dashboard (request):
         return render(request, "portal.html")
     else:
          HttpResponse('Not Authenticated')
+
+def alumnitracing(request):
+    url = 'https://docs.google.com/forms/d/e/1FAIpQLSdMrCgkbzxvZuQ3xYWdR9_bqoVotBEBP3kvNgQzQjA_o6vt0g/viewform?usp=sf_link'
+    return HttpResponseRedirect(url)

@@ -16,8 +16,8 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path,include
-from s_portal import views
 from account import views
+from portal import views
 
 
 
@@ -28,14 +28,15 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index, name="index"),
     path("about", views.about, name="about"),
-    path("portal", views.portal, name="portal"),
     path("covid19response", views.c19respo, name="covid19response"),
     path("jhs",views.jhs, name="jhs"),
-    path("", include('s_portal.urls')),
     path("clubs", views.clubs, name="clubs"),
     path("shs", views.shs, name="shs"),
     path("accountapp/", include('account.urls')),
-    path("dashboard", views.dashboard, name="dashboard")
+    path("dashboard", views.dashboard, name="dashboard"),
+    path("redirect/alumnitracing", views.alumnitracing, name="redirectalumni"),
+    path("portal/", include('portal.urls'))
+
 
 
 ]

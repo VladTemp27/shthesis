@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block customcss %} <link href="{% static 'css/sidebar.css'%}" rel="stylesheet"> {% endblock %} 
+
+{% block bodystyle %}background-color:#d9d9d9;{% endblock %}
+{% block content %}
+{% include 'sidebar.html' %}
+<div class="b-example-divider b-example-vr"></div>
+
+<div class="container-fluid" style="padding-top: 1%;">
+    <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Subjects</h1>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block customjava %} <script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+crossorigin="anonymous"
+></script>
+{% endblock %}
