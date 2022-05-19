@@ -9,20 +9,20 @@
 
 <div class="container-fluid" style="padding-top: 1%;">
     <div class="row">
-        <h1 class="display-5 fw-bold lh-1 mb-3"> Subjects</h1>
+        <h1 class="display-5 fw-bold lh-1 mb-3"> Profile</h1>
     </div>
-
+    {% for data in sdata %}
+    {% for grade in glevel %}
     <div class="row" >
-        {%for subject in subjects %}
-         Subject 1:{{subject.subject1}}<br>
-         Subject 2:{{subject.subject2}}<br>
-         Subject 3:{{subject.subject3}}<br>
-         Subject 4:{{subject.subject4}}<br>
-        {% endfor %}
-
+       LRN: {{data.LRN}}<br>
+       First Name: {{data.first_name}}<br>
+       Last Name: {{data.last_name}}<br>
+       Grade Level: {{grade.level}}
+       {%endfor%}
     </div>
 
 </div>
+{% endfor %}
 {% endblock %}
 
 {% block customjava %} <script

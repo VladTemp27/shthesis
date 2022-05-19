@@ -29,3 +29,22 @@ class Subjects(models.Model):
     subject8                =models.CharField(max_length=200, null=True)
     subject9                =models.CharField(max_length=200, null=True)
     subject10               =models.CharField(max_length=200, null=True)
+
+    def __str__(self):
+        return self.level
+
+class Student(models.Model):
+    LRN                 =models.CharField(max_length=100, unique=True,null=False)
+    userid              =models.ForeignKey(Account, on_delete=models.SET_NULL, null=True)
+    first_name          =models.CharField(max_length=20, null=True)
+    middle_name         =models.CharField(max_length=20, null=True)
+    last_name           =models.CharField(max_length=20, null=True)
+    glevel              =models.ForeignKey(Subjects, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.first_name
+
+
+    
+
+    

@@ -33,9 +33,9 @@ urlpatterns = [
     path("clubs", views.clubs, name="clubs"),
     path("shs", views.shs, name="shs"),
     path("accountapp/", include('account.urls')),
-    path("dashboard", views.dashboard, name="dashboard"),
     path("redirect/alumnitracing", views.alumnitracing, name="redirectalumni"),
-    path("portal/", include('portal.urls'))
+    path("portal/", include('portal.urls')),
+    path('toc', views.toc, name='toc')
 
 
 

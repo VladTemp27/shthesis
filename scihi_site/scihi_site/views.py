@@ -35,15 +35,10 @@ def clubs(request):
 def shs (request):
     return render(request, "shs.html")
 
-@login_required(login_url="/accountapp/login")
-def dashboard (request):
-    user = request.user
-    if request.user.is_authenticated:
-        
-        return render(request, "portal.html")
-    else:
-         HttpResponse('Not Authenticated')
 
 def alumnitracing(request):
     url = 'https://docs.google.com/forms/d/e/1FAIpQLSdMrCgkbzxvZuQ3xYWdR9_bqoVotBEBP3kvNgQzQjA_o6vt0g/viewform?usp=sf_link'
     return HttpResponseRedirect(url)
+
+def toc(request):
+    return render(request, "TOC.html")
