@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} SCI-HI {% endblock %}
+{% block title %} SCI-HI | Homepage {% endblock %}
 
 {% block customcss %}{% endblock %}
 
@@ -30,7 +30,7 @@
   </div>
 </div>
 
-<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+<div class="container col-xl-10 col-xxl-8 px-4 py-5 visually-hidden">
   <div class="row align-items-center g-lg-5 py-5">
     <div class="col-md-10 mx-auto col-lg-5">
       <form class="p-4 p-md-5 border rounded-3 bg-light">
@@ -64,8 +64,10 @@
   
   <div class="contianer" style="padding-bottom: 5%;padding-top: 5%;">
     <h1 class="display-5 fw-bold text-white text-center" style="padding-top: 4%; padding-bottom: 1%;">Centered hero</h1>
-    <p class="lead mb-4 text-white" style="padding-bottom: 3%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo rem nesciunt quibusdam iure voluptatem illum aperiam molestias a sunt? Ab, reprehenderit numquam. Perferendis aperiam iste quos? Veniam facere ex labore!</p>
-    <div class="container">
+    <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4 text-white text-center" style="padding-bottom: 3%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo rem nesciunt quibusdam iure voluptatem illum aperiam molestias a sunt? Ab, reprehenderit numquam. Perferendis aperiam iste quos? Veniam facere ex labore!</p>
+    </div>
+    <div class="container justify-content-center">
       <div class="row">
         <div class="col align-items-center">
           <img src="{%static 'assets/bootstrap-themes.png'%}" alt=""style="width: 80%; height: auto;">

@@ -42,3 +42,6 @@ def alumnitracing(request):
 
 def toc(request):
     return render(request, "TOC.html")
+
+def privacy(request):
+    return render(request, 'privacy.html')

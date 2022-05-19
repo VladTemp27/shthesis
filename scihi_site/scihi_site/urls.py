@@ -35,7 +35,8 @@ urlpatterns = [
     path("accountapp/", include('account.urls')),
     path("redirect/alumnitracing", views.alumnitracing, name="redirectalumni"),
     path("portal/", include('portal.urls')),
-    path('toc', views.toc, name='toc')
+    path('toc', views.toc, name='toc'),
+    path('privacy', views.privacy, name='privacy')
 
 
 
